@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="simple.dynamic-labels.css" />
+
+
+<div class="form-wrapper">
+<h4>Form with dynamic labels</h4>
+<form class="edl-form">
+    <p>
+        <input type="text" name="name" />
+        <label for="name">Full name</label>
+    </p>
+    <p>
+        <input type="email" name="email" />
+        <label for="email">Email address</label>
+    </p>
+    <p>
+        <textarea name="comments"></textarea>
+        <label for="comments">Comments</label>
+    </p>
+    <p class="edl-select">
+        <select name="sample">
+            <option selected="selected" disabled="disabled"></option>
+            <option>This is the first option</option>
+            <option>This is the second option and far longer</option>
+            <option>This is the thrid option</option>
+        </select>
+        <label for="sample">What should you choose?</label>
+    </p>
+</form>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="simple.dynamic-labels.js"></script>
