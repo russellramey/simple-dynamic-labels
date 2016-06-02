@@ -1,6 +1,6 @@
 // Document Ready
 $( document ).ready(function() {
-    $('.edl-form input, .edl-form textarea, .edl-form select').simple_dynamic_labels();
+    $('.sdl-form input, .sdl-form textarea, .sdl-form select').simple_dynamic_labels();
 });
 // Simple Dynamic Labels
 $.fn.simple_dynamic_labels = function (){
