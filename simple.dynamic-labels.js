@@ -4,13 +4,11 @@ $( document ).ready(function() {
 });
 // Simple Dynamic Labels
 $.fn.simple_dynamic_labels = function (){
-	var input = $('input');
-	var textarea = $('textarea');
     $(this).blur(function() {
         if($(this).val() ) {
-            $(this).parent().children('label').addClass('has-value');
+            $(this).parent().find('label').addClass('has-value');
         } else {
-            $(this).parent().children('label').removeClass('has-value');
+            $(this).parent().find('label').removeClass('has-value');
         }
     });
 };
