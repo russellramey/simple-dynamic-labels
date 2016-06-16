@@ -5,25 +5,25 @@
 <h4>Form with dynamic labels</h4>
 <form class="sdl-form">
     <p>
-        <input type="text" name="name" />
-        <label for="name">Full name</label>
+        <label for="name" class="sdl-label">Full name</label>
+        <input type="text" name="name" class="required" />
     </p>
     <p>
-        <input type="email" name="email" />
-        <label for="email">Email address</label>
+        <label for="email" class="sdl-label">Email address</label>
+        <input type="email" name="email" class="required email" />
     </p>
     <p>
-        <textarea name="comments"></textarea>
-        <label for="comments">Comments</label>
+        <label for="comments" class="sdl-label">Comments</label>
+        <textarea name="comments" class="required"></textarea>
     </p>
     <p class="sdl-select">
+        <label for="sample" class="sdl-label">What should you choose?</label>
         <select name="sample">
             <option selected="selected" disabled="disabled"></option>
             <option>This is the first option</option>
             <option>This is the second option and far longer</option>
             <option>This is the thrid option</option>
         </select>
-        <label for="sample">What should you choose?</label>
     </p>
 </form>
 </div>
