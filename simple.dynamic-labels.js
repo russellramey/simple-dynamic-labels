@@ -32,5 +32,10 @@ $.fn.simple_dynamic_labels = function (){
                 $(this).parent().find(labels).removeClass(active);
             }
         });
+
+        // Has value
+        if($(this).val() ) {
+            $(this).parent().find(labels).addClass(active);
+        } 
     });
 };
