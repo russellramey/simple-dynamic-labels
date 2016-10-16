@@ -32,3 +32,6 @@ Dynamic in-field labels for forms. Simple lightweight using CSS and jQuery. Back
 ```javascript
 $('.sdl-form').simple_dynamic_labels();
 ```
+
+## Demo
+See the basic functionality [here](http://russellramey.me/examples/simple-dynamic-labels), 
