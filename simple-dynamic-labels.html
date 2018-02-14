@@ -1,3 +1,8 @@
+<style>
+    body{
+        font-family: helvetica, sans-serif;
+    }
+</style>
 <link rel="stylesheet" type="text/css" href="simple.dynamic-labels.css" />
 
 
@@ -6,15 +11,21 @@
 <form class="sdl-form">
     <p>
         <label for="name" class="sdl-label">Full name</label>
-        <input type="text" name="name" class="required" />
+        <input type="text" name="name" class="required" placeholder="Jane Doe" />
     </p>
     <p>
         <label for="email" class="sdl-label">Email address</label>
-        <input type="email" name="email" class="required email" />
+        <input type="email" name="email" class="required email" placeholder="email@domain.com" value="r@r.com" />
     </p>
     <p>
         <label for="comments" class="sdl-label">Comments</label>
-        <textarea name="comments" class="required"></textarea>
+        <textarea name="comments" class="required" placeholder="Tell us your thoughts..."></textarea>
+    </p>
+    <p>
+        <label class="sdl-checkbox"><input type="checkbox" name="checkbox" value="checkbox">Checkbox</label>
+    </p>
+    <p>
+        <label class="sdl-radio"><input type="radio" name="radio" value="radio">Radio</label>
     </p>
     <p class="sdl-select">
         <label for="sample" class="sdl-label">What should you choose?</label>

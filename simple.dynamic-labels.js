@@ -6,7 +6,7 @@ $( document ).ready(function() {
 $.fn.simple_dynamic_labels = function (){
 
     // Find inputs
-    var inputs = $(this).find('input, textarea, select');
+    var inputs = $(this).find('input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], textarea, select');
 
     // Find labels
     var labels = $(this).find('label.sdl-label');
@@ -15,7 +15,7 @@ $.fn.simple_dynamic_labels = function (){
     // Set active class
     var active = "has-value";
 
-    // For each input
+    // For each text based input
     $(inputs).each(function(){
         // On focus
         $(this).focus(function() {
@@ -26,7 +26,7 @@ $.fn.simple_dynamic_labels = function (){
 
         // On blur
         $(this).blur(function() {
-            if($(this).val() ) {
+            if($(this).val()) {
                 $(this).parent().find(labels).addClass(active);
             } else {
                 $(this).parent().find(labels).removeClass(active);
@@ -34,8 +34,27 @@ $.fn.simple_dynamic_labels = function (){
         });
 
         // Has value
-        if($(this).val() ) {
+        if($(this).val()) {
             $(this).parent().find(labels).addClass(active);
-        } 
+        }
     });
+
+    // Radio
+    $(this).find("input[type=checkbox]").on('change', function () {
+        // Toggle current selected checkbox
+        $(this).parent().toggleClass("selected");
+        return false;
+    });
+
+    // Checkbox
+    $(this).find("input[type=radio]").on('change', function () {
+        // Get all .input-radios from parent
+        var options = $(this).parent().parent().find('.sdl-radio');
+        // Remove all 'selected' classes
+        $(options).removeClass('selected');
+        // Toggle current selected radio
+        $(this).parent().toggleClass("selected");
+        return false;
+    });
+    
 };
