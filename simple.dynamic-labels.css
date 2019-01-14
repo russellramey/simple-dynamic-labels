@@ -15,7 +15,7 @@ form.sdl-form textarea{
     font-size: 16px;
     position: relative;
     border-radius: 4px;
-    padding:1rem 1rem  .25rem 1rem !important;
+    padding:1rem 1rem  1rem 1rem !important;
     width: 100%;
     font-size: 1rem;
     min-height: 50px;
@@ -60,8 +60,12 @@ form.sdl-form label.sdl-label{
 form.sdl-form label.has-value{
     color: #3073A2;
     font-size: .65rem;
-    line-height: 1.9rem;
+    line-height: 1rem;
     text-transform: uppercase;
+    background: #fff;
+    padding:0 5px;
+    margin-left:-5px;
+    top: -.5rem;
 }
 /* Form select */
 form.sdl-form .sdl-select select {
@@ -119,6 +123,9 @@ form.sdl-form .sdl-radio:before {
     top:50%;
     margin-top: -15px;
     border-radius: 50%;
+}
+form.sdl-form .sdl-checkbox:before{
+    border-radius: 5px;
 }
 form.sdl-form .sdl-checkbox.selected:before,
 form.sdl-form .sdl-radio.selected:before{

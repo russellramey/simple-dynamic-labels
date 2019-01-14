@@ -6,7 +6,7 @@ $( document ).ready(function() {
 $.fn.simple_dynamic_labels = function (){
 
     // Find inputs
-    var inputs = $(this).find('input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], textarea, select');
+    var inputs = $(this).find('input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"], input[type="number"], textarea, select');
 
     // Find labels
     var labels = $(this).find('label.sdl-label');
