@@ -41,7 +41,6 @@ form.sdl-form select:hover {
 }
 form.sdl-form textarea{
     min-height: 150px;
-    padding-top: 1.4rem !important;
 }
 form.sdl-form label.sdl-label{
     position: absolute;
